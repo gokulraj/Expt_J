@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<dd>
+    <tab name="Expense" desc="Expense Table"><![CDATA[create table expense(expenseid bigint not null auto_increment primary key,
+     			amount double,notes tinytext,category tinytext, users varchar(500),currency varchar(5),expensedate DATE,
+     			createdtime timestamp,modifiedtime timestamp,createdby bigint,modiefiedby bigint, reportid bigint)]]>  
+	</tab>
+     <tab name="Reports" desc="Reports Table"><![CDATA[create table reports(reportid bigint not null auto_increment primary key,
+     		reportname varchar(500),criteria varchar(500),createdtime timestamp,modifiedtime timestamp)]]>  
+	</tab>
+</dd>
